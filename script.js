@@ -29,7 +29,7 @@ form.addEventListener('submit', e => {
   const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
   passwordDisplay.innerText = password
   let text = document.getElementById('passwordDisplay').innerText;
-  console.log(text)
+  // console.log(text)
   navigator.clipboard.writeText(text);
 })
 
