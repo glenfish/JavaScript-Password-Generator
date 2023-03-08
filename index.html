@@ -11,22 +11,22 @@
 <body>
   <div class="container">
     <h1 class="title">Password Generator</h1>
-    <h3 class="password-display" id="passwordDisplay">password</h3>
+    <h3 class="password-display" id="passwordDisplay">* * * *</h3>
     <form id="passwordGeneratorForm" class="form">
       <label for="characterAmountNumber">Number Of Characters</label>
       <div class="character-amount-container">
-        <input type="range" min="1" max="50" value="10" id="characterAmountRange">
-        <input class="number-input" type="number" min="1" max="50" value="10" id="characterAmountNumber">
+        <input type="range" min="12" max="50" value="25" id="characterAmountRange">
+        <input class="number-input" type="number" min="12" max="50" value="25" id="characterAmountNumber">
       </div>
 
       <label for="includeUppercase">Include Uppercase</label>
-      <input type="checkbox" id="includeUppercase">
+      <input type="checkbox" id="includeUppercase" class="checkbox-round">
 
       <label for="includeNumbers">Include Numbers</label>
-      <input type="checkbox" id="includeNumbers">
+      <input type="checkbox" id="includeNumbers" class="checkbox-round">
 
       <label for="includeSymbols">Include Symbols</label>
-      <input type="checkbox" id="includeSymbols">
+      <input type="checkbox" id="includeSymbols" class="checkbox-round">
 
       <button type="submit" class="btn">Generate Password</button>
     </form>

@@ -28,6 +28,9 @@ form.addEventListener('submit', e => {
   const includeSymbols = includeSymbolsElement.checked
   const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
   passwordDisplay.innerText = password
+  let text = document.getElementById('passwordDisplay').innerText;
+  console.log(text)
+  navigator.clipboard.writeText(text);
 })
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
