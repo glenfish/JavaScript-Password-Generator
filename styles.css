@@ -97,7 +97,7 @@ document.getElementById("input").style.backgroundColor = '#000000';
   padding: 1rem;
   border: 1px solid #333;
   height: 2rem;
-  width: 360px;
+  width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,4 +122,10 @@ document.getElementById("input").style.backgroundColor = '#000000';
 
 .btn:hover {
   background-color: #FFFFFF33;
+}
+
+.infotext {
+  text-align:center;
+  padding-top:30px;
+  color: rgb(71, 199, 114);
 }
